@@ -1,0 +1,158 @@
+.Team {
+    margin: 150px 0px;
+}
+
+.Team .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.TeamImages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.image-overlay {
+    position: relative;
+}
+
+.image-overlay .overlay-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-overlay .overlay-content ul {
+    display: flex;
+    gap: 15px;
+
+}
+
+.image-overlay .overlay-content ul li {
+    width: 44px;
+    height: 44px;
+    background-color: white;
+    color: #2a2a2a;
+    text-align: center;
+    align-content: center;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: background 0.3s ease;
+
+}
+
+.image-overlay .overlay-content ul li:hover {
+    background-color: #2a2a2a;
+    color: white;
+}
+
+.image-overlay:hover .overlay-content {
+    opacity: 1;
+}
+
+.teamImage .image-overlay img {
+    width: 100%;
+    display: block;
+
+}
+
+
+.TeamMemberInfo span,
+.top span {
+    margin-top: 15px;
+    font-style: italic;
+    color: rgb(173, 171, 171);
+
+
+}
+
+.TeamMemberInfo {
+    justify-self: center;
+}
+
+.TeamMemberInfo h3 {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    .TeamImages {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .TeamImages> :nth-child(1) {
+        width: 80%;
+    }
+
+    .TeamImages> :nth-child(n+2) {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .Team {
+        margin: 80px 0px;
+    }
+
+    .TeamImages {
+        gap: 30px;
+        margin-top: 40px;
+    }
+
+    .TeamImages> :nth-child(1),
+    .TeamImages> :nth-child(n+2) {
+        width: 90%;
+    }
+
+    .Team .top h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Team {
+        margin: 60px 0px;
+    }
+
+    .TeamImages {
+        gap: 25px;
+        margin-top: 30px;
+    }
+
+    .TeamImages> :nth-child(1),
+    .TeamImages> :nth-child(n+2) {
+        width: 100%;
+    }
+
+    .Team .top h1 {
+        font-size: 24px;
+    }
+
+    .image-overlay .overlay-content ul li {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+}

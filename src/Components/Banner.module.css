@@ -1,0 +1,294 @@
+.banner {
+    display: flex;
+    gap: 30px;
+    margin-top: 150px;
+    margin-bottom: 90px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.mainPic {
+    flex: 1;
+    width: 100%;
+    height: 90vh;
+    background: url('./images/left-banner-image.jpg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    gap: 30px;
+}
+
+.mainPic h1,
+.mainPic span {
+    padding-left: 80px;
+}
+
+.mainPic button {
+    margin-left: 80px;
+
+}
+
+.mainPic span {
+    color: white;
+}
+
+.mainPic button {
+    background: transparent;
+    color: white;
+    border: 0.5px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 140px;
+    height: 45px;
+    text-align: center;
+    transition: all 0.3s ease;
+
+}
+
+.mainPic button:hover {
+    background-color: white;
+    color: black;
+}
+
+.mainPic h1 {
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.sidePics {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 22px;
+}
+
+.picContainer {
+    width: 48%;
+    height: 43vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.defaultContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.defaultContent,
+.hoverContent {
+    position: absolute;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.hoverContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 19%;
+    height: 38%;
+    background-color: rgb(44, 43, 43);
+    gap: 10px;
+    opacity: 0;
+}
+
+.hoverContent span {
+    font-size: 14px;
+    text-align: center;
+}
+
+.hoverContent button {
+    background: transparent;
+    color: white;
+    border: 0.5px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 140px;
+    height: 45px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.hoverContent button:hover {
+    background-color: white;
+    color: black;
+}
+
+
+.picContainer:hover .defaultContent {
+    opacity: 0;
+}
+
+.picContainer:hover .hoverContent {
+    opacity: 1;
+}
+
+.picContainer span {
+    margin-top: 10px;
+    color: white;
+}
+
+.picContainer:nth-child(1) {
+    background-image: url('./images/bannerRI1.jpg');
+}
+
+.picContainer:nth-child(2) {
+    background-image: url('./images/bannerRI2.jpg');
+}
+
+.picContainer:nth-child(3) {
+    background-image: url('./images/bannerRI3.jpg');
+}
+
+.picContainer:nth-child(4) {
+    background-image: url('./images/bannerRI4.jpg');
+}
+
+
+
+
+
+@media (max-width: 1260px) {
+    .picContainer {
+        width: 44%;
+        height: 37vh;
+    }
+
+    .mainPic {
+        height: 78vh;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .banner {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .mainPic {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        padding-left: 0px;
+    }
+
+    .mainPic h1 {
+        font-size: 42px;
+    }
+
+    .mainPic button {
+        width: 120px;
+        height: 40px;
+        padding: 8px 16px;
+    }
+
+
+    .picContainer {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1
+    }
+
+    .hoverContent {
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .mainPic {
+        width: 100%;
+        height: auto;
+    }
+
+    .mainPic h1 {
+        font-size: 36px;
+    }
+
+    .sidePics {
+        gap: 10px;
+    }
+
+    .picContainer {
+        width: 100%;
+        /* height: 40vh; */
+        height: auto;
+    }
+
+    .hoverContent {
+        width: 40%;
+        height: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        gap: 10px;
+        margin-top: 80px;
+        margin-bottom: 50px;
+        flex-direction: column;
+    }
+
+    .mainPic {
+        /* padding-left: 10px; */
+        width: 100%;
+        /* height: 50vh; */
+        height: auto;
+
+    }
+
+    .mainPic h1 {
+        font-size: 28px;
+    }
+
+    .mainPic button {
+        width: 100px;
+        height: 35px;
+    }
+
+    .picContainer {
+        /* height: 20vh; */
+        width: 100%;
+        height: auto;
+
+
+    }
+
+    .hoverContent {
+        width: 30%;
+        height: 30%;
+    }
+
+    .hoverContent button {
+        padding: 5px 10px;
+        width: 70px;
+        height: 45px;
+
+    }
+}
+
+@media (max-width: 400px) {
+    .hoverContent {
+        /* flex-direction: row; */
+        width: 55%;
+        height: 20%;
+        gap: 0px;
+
+    }
+
+}

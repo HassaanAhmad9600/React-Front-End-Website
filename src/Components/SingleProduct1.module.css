@@ -1,0 +1,254 @@
+/* .SProduct1 {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+
+}
+
+.SProduct1 .left {
+    flex: 1;
+    padding-left: 90px;
+
+
+}
+
+.SProduct1 .right {
+    flex: 1;
+    display: flex;
+    padding-right: 90px;
+    gap: 10px;
+    flex-direction: column;
+    font-size: 18px;
+
+}
+
+.SProduct1 .right span,
+p {
+    color: rgb(173, 171, 171);
+}
+
+.right .black::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f10d";
+    font-weight: 900;
+    font-size: 32px;
+
+}
+
+.SProduct1 .right .starsContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.SProduct1 .right .starsContainer .stars {
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    list-style: none;
+    font-size: 10px;
+    gap: 4px;
+}
+
+
+.right .black {
+    color: black;
+}
+
+.right .state {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+
+.right .state h3 {
+    color: rgb(173, 171, 171);
+}
+
+.right .state .counter {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.right .state .counter button {
+    all: unset;
+    cursor: pointer;
+    padding: 5px 10px;
+
+}
+
+.right .state .counter span {
+    color: black;
+    padding: 5px 10px;
+}
+
+.right .state .counter button,
+span {
+    color: rgb(173, 171, 171);
+}
+
+.right .state .counter button:first-child {
+    border-right: none;
+}
+
+.right .state .counter button:last-child {
+    border-left: none;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.SProduct1 {
+    display: flex;
+    gap: 60px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+@media (min-width: 1600px) {
+    .SProduct1 {
+        max-width: 1200px;
+        margin: 50px auto;
+    }
+}
+
+.SProduct1 .left {
+    flex: 1.5;
+    padding-left: 90px;
+}
+
+.SProduct1 .right {
+    flex: 1;
+    display: flex;
+    padding-right: 90px;
+    gap: 10px;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.SProduct1 .right span,
+p {
+    color: rgb(173, 171, 171);
+}
+
+.right .black::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f10d";
+    font-weight: 900;
+    font-size: 32px;
+}
+
+.SProduct1 .right .starsContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.SProduct1 .right .starsContainer .stars {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 10px;
+    gap: 4px;
+}
+
+.right .black {
+    color: black;
+}
+
+.right .state {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.right .state h3 {
+    color: rgb(173, 171, 171);
+}
+
+.right .state .counter {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.right .state .counter button {
+    all: unset;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.right .state .counter span {
+    color: black;
+    padding: 5px 10px;
+}
+
+.right .state .counter button,
+span {
+    color: rgb(173, 171, 171);
+}
+
+.right .state .counter button:first-child {
+    border-right: none;
+}
+
+.right .state .counter button:last-child {
+    border-left: none;
+}
+
+.SProduct1 .left img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+@media (min-width: 2000px) {
+    .SProduct2 {
+        max-width: 2000px;
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-width: 1280px) {
+    .SProduct1 {
+        flex-direction: column;
+        padding: 0 15px;
+    }
+
+    .SProduct1 .left,
+    .SProduct1 .right {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .SProduct1 .left {
+        align-self: center;
+    }
+
+    .SProduct1 .right {
+        align-self: center;
+    }
+}

@@ -1,0 +1,74 @@
+.ImageBanner {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    font-family: poppins, sans-serif;
+    margin-top: 150px;
+    margin-bottom: 90px;
+}
+
+.ImageContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.ImageContent h1 {
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.ImageContent span {
+    color: white;
+}
+
+
+
+@media (max-width: 1200px) {
+    .ImageContent h1 {
+        font-size: 44px;
+    }
+}
+
+@media (max-width: 992px) {
+    .ImageBanner {
+        height: 50vh;
+    }
+
+    .ImageContent h1 {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ImageBanner {
+        height: 45vh;
+        margin-top: 100px;
+        margin-bottom: 60px;
+    }
+
+    .ImageContent h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ImageBanner {
+        height: 40vh;
+        margin-top: 80px;
+        margin-bottom: 40px;
+        padding: 0 10px;
+    }
+
+    .ImageContent h1 {
+        font-size: 26px;
+    }
+}

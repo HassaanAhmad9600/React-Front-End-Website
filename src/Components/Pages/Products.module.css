@@ -1,0 +1,28 @@
+.head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.head span {
+    color: #a1a1a1;
+}
+
+@media (max-width: 768px) {
+    .head h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .head h1 {
+        font-size: 24px;
+    }
+
+    .head span {
+        font-size: 14px;
+    }
+}

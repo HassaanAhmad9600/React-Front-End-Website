@@ -1,0 +1,43 @@
+.nextpage {
+    margin: 80px 0px;
+}
+
+.nextpage ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+    gap: 10px;
+}
+
+.nextpage ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    width: 3%;
+    height: 40px;
+    border: 1px solid black;
+}
+
+.nextpage ul li:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(17, 16, 16);
+}
+
+@media (max-width : 550px) {
+    .nextpage ul li {
+        width: 5%;
+
+    }
+
+}
+
+@media (max-width : 300px) {
+    .nextpage ul li {
+        width: 7%;
+
+    }
+}

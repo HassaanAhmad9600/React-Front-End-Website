@@ -1,0 +1,158 @@
+.Social {
+    padding: 0px 120px;
+    margin: 120px 0;
+}
+
+@media (min-width: 1600px) {
+    .Social {
+        max-width: 1400px;
+        margin: 120px auto;
+    }
+}
+
+.headpara {
+    text-align: start;
+    margin-bottom: 20px;
+}
+
+.headpara h2 {
+    margin-bottom: 10px;
+}
+
+.headpara p {
+    color: #555;
+    margin-bottom: 60px;
+}
+
+
+.socialGallery {
+    display: flex;
+}
+
+
+.socialGallery .pics {
+    display: flex;
+    flex: 0 0 calc(100% / 6);
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    cursor: pointer;
+    align-items: flex-end;
+    justify-content: flex-start;
+
+
+}
+
+
+.socialGallery .pics::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.3s ease-in-out;
+}
+
+
+.socialGallery .overlayContent {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    color: white;
+    font-size: 14px;
+
+    gap: 8px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.socialGallery .overlayContent span {
+    color: white;
+}
+
+
+.socialGallery .pics:hover::after {
+    background: rgba(0, 0, 0, 0.8)
+}
+
+.socialGallery .pics:hover .overlayContent {
+    opacity: 1;
+
+}
+
+
+.pics:nth-child(1) {
+    background-image: url('./images/instagram-02.jpg');
+
+}
+
+.pics:nth-child(2) {
+    background-image: url('./images/instagram-04.jpg');
+}
+
+.pics:nth-child(3) {
+    background-image: url('./images/instagram-06.jpg');
+}
+
+.pics:nth-child(4) {
+    background-image: url('./images/teamMember3.jpg');
+}
+
+.pics:nth-child(5) {
+    background-image: url('./images/teamMember2.jpg');
+}
+
+.pics:nth-child(6) {
+    background-image: url('./images/service2.jpg');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .Social {
+        padding: 0 20px;
+        margin: 60px 0;
+    }
+
+    .headpara {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .socialGallery {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .socialGallery .pics {
+        flex: 0 0 calc(50% - 5px);
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .headpara h2 {
+        font-size: 24px;
+    }
+
+    .headpara p {
+        font-size: 14px;
+    }
+
+    .socialGallery .pics {
+        flex: 0 0 100%;
+        height: 120px;
+    }
+}

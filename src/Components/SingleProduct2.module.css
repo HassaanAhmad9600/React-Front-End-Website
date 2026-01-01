@@ -1,0 +1,137 @@
+/* .SProduct2 {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+
+
+}
+
+.SProduct2 .left {
+    flex: 1;
+    padding-left: 90px;
+}
+
+.SProduct2 .right {
+    flex: 1;
+    display: flex;
+    padding-right: 90px;
+    gap: 50px;
+}
+
+.SProduct2 .right h2 {
+    color: rgb(173, 171, 171);
+
+}
+
+.SProduct2 .right button {
+    width: 38%;
+    height: 44px;
+    background-color: white;
+    color: black;
+}
+
+.SProduct2 .right button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.SProduct2 {
+    display: flex;
+    gap: 60px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+@media (min-width: 1600px) {
+    .SProduct2 {
+        max-width: 1200px;
+        margin: 50px auto 80px;
+    }
+}
+
+.SProduct2 .left {
+    flex: 1.5;
+    padding-left: 90px;
+}
+
+.SProduct2 .right {
+    flex: 1;
+    display: flex;
+    padding-right: 90px;
+    gap: 50px;
+}
+
+.SProduct2 .right h2 {
+    color: rgb(173, 171, 171);
+}
+
+.SProduct2 .right button {
+    width: 38%;
+    height: 44px;
+    background-color: white;
+    color: black;
+}
+
+.SProduct2 .right button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.SProduct2 .left img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+@media (min-width: 2000px) {
+    .SProduct1 {
+        max-width: 2000px;
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-width: 1280px) {
+    .SProduct2 {
+        flex-direction: column;
+        padding: 0 15px;
+    }
+
+    .SProduct2 .left,
+    .SProduct2 .right {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+
+    .SProduct2 .left {
+        align-self: center;
+    }
+
+    .SProduct2 .right {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+}
